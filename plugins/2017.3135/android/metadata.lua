@@ -39,7 +39,7 @@ local metadata =
 					android:permission="android.permission.BIND_JOB_SERVICE" />		   
 				]],
 				[[
-					<receiver android:name="com.startapp.android.publish.common.metaData.BootCompleteListener" >
+					<receiver android:name="com.startapp.android.publish.common.metaData.BootCompleteListener" android:exported="false" >
 						<intent-filter>
 							<action android:name="android.intent.action.BOOT_COMPLETED" />
 						</intent-filter>
